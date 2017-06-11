@@ -20,6 +20,7 @@ class GroupsController < ApplicationController
 
     if @group.save
       redirect_to groups_path
+      flash[:notice]= "你真牛！新增了一个讨论组！"
     else
       render :new
     end
@@ -42,7 +43,7 @@ class GroupsController < ApplicationController
     redirect_to groups_path
     flash[:alert] = "删除成功！"
   end
-  
+
   private
 
   def group_params
