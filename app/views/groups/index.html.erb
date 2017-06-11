@@ -19,7 +19,7 @@
           <td><%= group.description %></td>
           <td>
               <%= link_to("编辑", edit_group_path(group), class: "btn btn-sm btn-primary")%>
-              <%= link_to("删除", group_path(group),      class: "btn btn-sm btn-primary",
+              <%= link_to("删除", group_path(group),      class: "btn btn-sm btn-warning",
                           method: :delete, data: { confirm: "Are you sure?" } )%>
           </td>
         </tr>
